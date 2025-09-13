@@ -32,3 +32,59 @@ A single HTML file named `index.html`. It should include:
 * Apply basic on-page SEO techniques.
 * Follow clean, readable HTML code structure.
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A beginner-friendly HTML5 page built with love, learning, and semantic tags." />
+  <meta name="keywords" content="HTML5, student project, accessibility, SEO, web dev basics" />
+  <meta name="author" content="Emmanuel Katama" />
+  <title>My First Semantic Web Page 🎓</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1>Hello World! 👋</h1>
+    <nav role="navigation" aria-label="Main Menu">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#articles">My Articles</a></li>
+        <li><a href="#contact">Say Hi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Project</h2>
+      <p>Hey there! I'm learning how to build web pages using HTML5. This one uses semantic tags, accessibility tricks, and a sprinkle of SEO magic.</p>
+    </section>
+
+    <section id="articles" aria-labelledby="articles-heading">
+      <h2 id="articles-heading">Cool Stuff I Wrote ✍️</h2>
+      <article>
+        <h3>Why Semantic Tags Are Like Good Friends</h3>
+        <p>They help browsers and screen readers understand your content better—like giving directions to a lost tourist!</p>
+      </article>
+      <article>
+        <h3>Accessibility 101: Making Everyone Feel Welcome</h3>
+        <p>From alt text to ARIA labels, it's all about making sure no one’s left out of the party.</p>
+      </article>
+    </section>
+  </main>
+
+  <aside role="complementary" aria-label="Sidebar Tips">
+    <h2>Quick Tips for Fellow Learners 💡</h2>
+    <ul>
+      <li>Use tags like `<main>`, `<section>`, and `<article>` to organize your content</li>
+      <li>Write a clear `<title>` and add helpful `<meta>` info</li>
+      <li>Use ARIA labels to guide screen readers</li>
+    </ul>
+  </aside>
+
+  <footer role="contentinfo">
+    <p>Made with 💻 & ☕ by Emmanuel Katama. &copy; 2025</p>
+  </footer>
+</body>
+</html>
